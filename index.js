@@ -158,7 +158,7 @@ InfluxDbStats.prototype.collectZwaveDevice = function (deviceIndex,device) {
     return 'zwave.' + self.escapeValue(deviceIndex) +
         ',title=' + self.escapeValue(deviceData.givenName.value) + // Tags
         ',type=' + self.escapeValue(deviceData.basicType.value) +
-        ' failed=' + self.escapeValue(deviceData.countFailed.value) + // Values
+        // ' failed=' + self.escapeValue(deviceData.countFailed.value) + // Values
         ',failure=' + self.escapeValue(deviceData.failureCount.value) +
         ',success=' + self.escapeValue(deviceData.countSuccess.value) +
         ',queue=' + self.escapeValue(deviceData.queueLength.value) +
